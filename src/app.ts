@@ -23,11 +23,11 @@ const startServer = async () => {
   const books: Book[] = [
     {
       title: "The Bing",
-      author: "Kate Chopin",
+      author: "Kate ille",
     },
     {
       title: "APngle of Sling",
-      author: "Paul Auster",
+      author: "Paul Parkar",
     },
   ];
 
@@ -50,3 +50,4 @@ const startServer = async () => {
 };
 
 startServer();
+

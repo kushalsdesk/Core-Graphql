@@ -15,10 +15,6 @@
     "lib": ["es2020"],  // Include ES2020 libraries
     "typeRoots": ["./node_modules/@types", "./src/@types"]  // Location for type definitions
   },
-  "ts-node": {
-    "esm": true,
-        "experimentalSpecifierResolution": "node",
-  },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

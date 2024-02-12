@@ -1,6 +1,7 @@
 import { makeSchema } from "nexus";
 import { join } from "path";
 
+
 export const schema = makeSchema({
   types: [],
   outputs: {
@@ -8,3 +9,5 @@ export const schema = makeSchema({
     typegen: join(process.cwd(), "nexus-typegen.ts"),
   },
 });
+
+
