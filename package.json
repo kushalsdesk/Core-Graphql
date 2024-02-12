@@ -2,12 +2,12 @@
   "name": "core_graphql",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/server.js",
-    "dev": "ts-node ./src/server.ts",
+    "start": "npm run compile && node ./dist/app.js",
+    "dev": "tsx watch ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,9 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "nodemon": "^3.0.3",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   }
 }

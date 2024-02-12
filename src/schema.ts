@@ -7,4 +7,4 @@ export const schema = makeSchema({
     schema: join(process.cwd(), "schema.graphql"),
     typegen: join(process.cwd(), "nexus-typegen.ts"),
   },
-})
+});

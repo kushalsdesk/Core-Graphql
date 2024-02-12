@@ -1,14 +1,24 @@
 {
   "compilerOptions": {
-    "rootDirs": ["src"],
-    "outDir": "dist",
-    "lib": ["es2020"],
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "types": ["node"]
+    "target": "es2020",  // Enable top-level await
+    "module": "esnext",  // Use ECMAScript modules
+    "strict": true,      // Enforce stricter type checking
+    "esModuleInterop": true, // Better interoperability
+    "skipLibCheck": true,  // Speed up compilation
+    "forceConsistentCasingInFileNames": true,  // Prevent case-sensitivity issues
+    "outDir": "./dist",  // Output directory
+    "rootDir": "./src",  // Root source directory
+    "baseUrl": "./src",  // Base URL for imports
+    "resolveJsonModule": true,  // Enable JSON module imports
+    "declaration": false,  // (If not generating type declarations)
+    "moduleResolution": "node",  // Use Node.js module resolution
+    "lib": ["es2020"],  // Include ES2020 libraries
+    "typeRoots": ["./node_modules/@types", "./src/@types"]  // Location for type definitions
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "ts-node": {
+    "esm": true,
+        "experimentalSpecifierResolution": "node",
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }
